@@ -1,0 +1,39 @@
+name: note_dav
+description: "Projet de gestion de notes avec SQLite"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  sqflite: ^2.3.0
+  path: ^1.9.0
+  path_provider: ^2.1.0        # <--- VÉRIFIE CETTE LIGNE
+  sqflite_common_ffi: ^2.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+  flutter_launcher_icons: ^0.13.1
+
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "lib/assets/photo.jpg"
+  adaptive_icon_background: "#ffffff"
+
+flutter:
+  uses-material-design: true
+
+
+  assets:
+    - lib/assets/
